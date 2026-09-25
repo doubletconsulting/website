@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Double T Consulting</title>
+  <meta name="description" content="Request a consultation with Double T Consulting for emergency management, disaster recovery, or public-safety advisory support. Based in Wickenburg, AZ, deployable nationwide.">
+  <link rel="canonical" href="https://doubletconsulting.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Double T Consulting">
+  <meta property="og:description" content="Executive public-safety and emergency-management leadership for response, recovery, and resilience.">
+  <meta property="og:image" content="https://doubletconsulting.com/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://doubletconsulting.com/contact.html">
+  <meta name="theme-color" content="#031850">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/icon-180-appleicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="contact">
+  <div id="site-header" class="h-16 bg-navy-900 lg:h-20"></div>
+
+  <main id="main">
+    <!-- ============ PAGE HERO ============ -->
+    <section class="relative overflow-hidden bg-navy-900">
+      <img src="assets/img/mark-640.webp" alt="" class="hero-watermark">
+      <div class="container-site relative py-16 lg:py-24">
+        <p class="eyebrow">Contact</p>
+        <h1 class="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-tight text-white sm:text-5xl">Let's talk about what you're facing.</h1>
+        <p class="mt-6 max-w-2xl text-lg text-silver-300">Whether you're preparing for the next event or recovering from the last one, reach out. Every conversation starts with listening.</p>
+      </div>
+    </section>
+
+    <!-- ============ FORM + CONTACT CARD ============ -->
+    <section class="bg-slate-50 py-20 lg:py-24">
+      <div class="container-site grid gap-10 lg:grid-cols-12">
+        <!-- Form -->
+        <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-silver-100 sm:p-10 lg:col-span-7">
+          <h2 class="font-heading text-2xl font-bold">Request a consultation</h2>
+          <p class="mt-2 text-navy-700">Fields marked <span class="text-orange-600">*</span> are required.</p>
+
+          <!-- FORMSPREE: replace YOUR_FORM_ID with your form ID from formspree.io (e.g. https://formspree.io/f/abcdwxyz).
+               Until then, the form opens the visitor's email app with the message pre-filled. -->
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-8 grid gap-6 sm:grid-cols-2" novalidate>
+            <div>
+              <label for="name" class="form-label">Name <span class="text-orange-600">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" class="form-input" required aria-describedby="name-error">
+              <p id="name-error" class="form-error" role="alert"></p>
+            </div>
+            <div>
+              <label for="organization" class="form-label">Organization</label>
+              <input id="organization" name="organization" type="text" autocomplete="organization" class="form-input">
+            </div>
+            <div>
+              <label for="email" class="form-label">Email <span class="text-orange-600">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" class="form-input" required aria-describedby="email-error">
+              <p id="email-error" class="form-error" role="alert"></p>
+            </div>
+            <div>
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" class="form-input" aria-describedby="phone-error">
+              <p id="phone-error" class="form-error" role="alert"></p>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="interest" class="form-label">What can we help with?</label>
+              <select id="interest" name="interest" class="form-input">
+                <option value="">Select a service (optional)</option>
+                <option>Incident Management &amp; IMT Deployment</option>
+                <option>FEMA Public &amp; Individual Assistance</option>
+                <option>Disaster Recovery Operations</option>
+                <option>Emergency Management Planning</option>
+                <option>HSEEP Exercises &amp; Training</option>
+                <option>Crisis Management &amp; Business Continuity</option>
+                <option>Public-Safety Advisory</option>
+                <option>Teaming / Subcontracting Opportunity</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="form-label">Message <span class="text-orange-600">*</span></label>
+              <textarea id="message" name="message" rows="5" class="form-input" required aria-describedby="message-error"></textarea>
+              <p id="message-error" class="form-error" role="alert"></p>
+            </div>
+            <!-- Honeypot field: hidden from people, catches bots -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+            <div class="sm:col-span-2">
+              <button type="submit" class="btn-primary w-full sm:w-auto">Send Message</button>
+            </div>
+            <div id="form-status" class="sm:col-span-2" tabindex="-1" role="status" hidden></div>
+          </form>
+        </div>
+
+        <!-- Contact card -->
+        <aside class="lg:col-span-5">
+          <div class="rounded-2xl bg-navy-900 p-8 text-silver-300 sm:p-10">
+            <h2 class="font-heading text-2xl font-bold text-white">Direct contact</h2>
+            <ul class="mt-8 space-y-6">
+              <li class="flex gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-orange-500/15 text-orange-500" aria-hidden="true">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+                </span>
+                <div><p class="text-xs font-semibold uppercase tracking-eyebrow text-silver-500">Email</p>
+                  <a href="mailto:ty@doubletconsulting.com" class="mt-1 block break-all font-medium text-white hover:text-orange-400">ty@doubletconsulting.com</a></div>
+              </li>
+              <li class="flex gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-orange-500/15 text-orange-500" aria-hidden="true">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+                </span>
+                <div><p class="text-xs font-semibold uppercase tracking-eyebrow text-silver-500">Phone</p>
+                  <a href="tel:+14253146215" class="mt-1 block font-medium text-white hover:text-orange-400">425-314-6215</a></div>
+              </li>
+              <li class="flex gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-orange-500/15 text-orange-500" aria-hidden="true">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 1114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                </span>
+                <div><p class="text-xs font-semibold uppercase tracking-eyebrow text-silver-500">Based in</p>
+                  <p class="mt-1 font-medium text-white">Wickenburg, Arizona</p>
+                  <p class="text-sm">Deployable nationwide</p></div>
+              </li>
+            </ul>
+            <div class="mt-8 rounded-lg border border-white/10 bg-white/5 p-4 text-sm">
+              <p><span class="font-semibold text-white">Typical response:</span> within one business day.</p>
+            </div>
+            <!-- CAPABILITY STATEMENT: once you have a final PDF, save it as assets/docs/Double_T_Capability_Statement.pdf and un-comment this button.
+            <a href="assets/docs/Double_T_Capability_Statement.pdf" class="btn-primary mt-6 w-full" download>Download Capability Statement (PDF)</a>
+            -->
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
