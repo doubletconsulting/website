@@ -143,7 +143,7 @@
       });
       if (!res.ok) throw new Error('Request failed');
       form.reset();
-      setStatus('success', 'Thanks — your message is on its way. Ty will get back to you within one business day.');
+      setStatus('success', 'Thanks — your message is on its way. I’ll get back to you within one business day.');
     } catch {
       setStatus('error', 'Something went wrong sending your message. Please email ty@doubletconsulting.com directly.');
     } finally {

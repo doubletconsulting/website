@@ -10,9 +10,9 @@ const SITE = {
   name: 'Double T Consulting',
   tagline: 'Emergency Management & Disaster Recovery',
   email: 'ty@doubletconsulting.com',
-  phone: '425-314-6215',
-  phoneHref: 'tel:+14253146215',
-  location: 'Wickenburg, Arizona',
+  phone: '(425) 969-3424',
+  phoneHref: 'tel:+14259693424',
+  location: 'Phoenix, Arizona',
   // Fill these in once SAM.gov registration is confirmed (leave '' to hide the line)
   uei: '',
   cage: '',
@@ -21,6 +21,7 @@ const SITE = {
 
 const NAV = [
   { href: 'index.html', label: 'Home', page: 'home' },
+  { href: 'about.html', label: 'About', page: 'about' },
   { href: 'services.html', label: 'Services', page: 'services' },
   { href: 'contact.html', label: 'Contact', page: 'contact' },
 ];
