@@ -44,9 +44,8 @@
           <h2 class="font-heading text-2xl font-bold">Request a consultation</h2>
           <p class="mt-2 text-navy-700">Fields marked <span class="text-orange-600">*</span> are required.</p>
 
-          <!-- FORMSPREE: replace YOUR_FORM_ID with your form ID from formspree.io (e.g. https://formspree.io/f/abcdwxyz).
-               Until then, the form opens the visitor's email app with the message pre-filled. -->
-          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-8 grid gap-6 sm:grid-cols-2" novalidate>
+          <!-- Submissions go to Formspree (form "Website Contact") and are emailed to ty@doubletconsulting.com -->
+          <form id="contact-form" action="https://formspree.io/f/mppwybol" method="POST" class="mt-8 grid gap-6 sm:grid-cols-2" novalidate>
             <div>
               <label for="name" class="form-label">Name <span class="text-orange-600">*</span></label>
               <input id="name" name="name" type="text" autocomplete="name" class="form-input" required aria-describedby="name-error">
@@ -86,6 +85,7 @@
               <textarea id="message" name="message" rows="5" class="form-input" required aria-describedby="message-error"></textarea>
               <p id="message-error" class="form-error" role="alert"></p>
             </div>
+            <input type="hidden" name="_subject" value="New inquiry from doubletconsulting.com">
             <!-- Honeypot field: hidden from people, catches bots -->
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
             <div class="sm:col-span-2">
