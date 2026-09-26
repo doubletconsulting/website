@@ -112,27 +112,8 @@
       return;
     }
 
-    // Honeypot: bots fill hidden fields, people don't
-    if (form.elements._gotcha?.value) return;
-
-    // Until a Formspree form ID is added, fall back to opening the visitor's email app
-    if (form.action.includes('YOUR_FORM_ID')) {
-      const d = Object.fromEntries(new FormData(form));
-      const body = [
-        `Name: ${d.name}`,
-        `Organization: ${d.organization || '—'}`,
-        `Email: ${d.email}`,
-        `Phone: ${d.phone || '—'}`,
-        `Interest: ${d.interest || '—'}`,
-        '',
-        d.message,
-      ].join('\n');
-      window.location.href = `mailto:ty@doubletconsulting.com?subject=${encodeURIComponent(
-        'Consultation request — ' + (d.organization || d.name)
-      )}&body=${encodeURIComponent(body)}`;
-      return;
-    }
-
+    // The hidden "_gotcha" honeypot is checked by Formspree on its end, so every
+    // submission is sent and the visitor always sees a result.
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending…';
     try {
@@ -141,11 +122,19 @@
         body: new FormData(form),
         headers: { Accept: 'application/json' },
       });
-      if (!res.ok) throw new Error('Request failed');
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        const detail = (data.errors || []).map((er) => er.message).filter(Boolean).join(' ') || data.error || `Status ${res.status}`;
+        throw new Error(detail);
+      }
       form.reset();
       setStatus('success', 'Thanks — your message is on its way. I’ll get back to you within one business day.');
-    } catch {
-      setStatus('error', 'Something went wrong sending your message. Please email ty@doubletconsulting.com directly.');
+    } catch (err) {
+      console.error('Contact form error:', err);
+      setStatus(
+        'error',
+        `Sorry, your message didn’t go through (${err.message || 'network error'}). Please email ty@doubletconsulting.com directly.`
+      );
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send Message';
