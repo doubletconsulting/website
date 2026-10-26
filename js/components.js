@@ -14,7 +14,7 @@ const SITE = {
   phoneHref: 'tel:+14259693424',
   location: 'Phoenix, Arizona',
   // Fill these in once SAM.gov registration is confirmed (leave '' to hide the line)
-  uei: '',
+  uei: 'S4W6CL8FFJA7',
   cage: '',
   naics: '541611 · 541990 · 561210 · 611430',
 };
