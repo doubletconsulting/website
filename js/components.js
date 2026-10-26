@@ -13,6 +13,7 @@ const SITE = {
   phone: '(425) 969-3424',
   phoneHref: 'tel:+14259693424',
   location: 'Phoenix, Arizona',
+  linkedin: 'https://www.linkedin.com/in/ty-trenary',
   // Fill these in once SAM.gov registration is confirmed (leave '' to hide the line)
   uei: 'S4W6CL8FFJA7',
   cage: '',
@@ -138,6 +139,7 @@ function renderFooter() {
         <ul class="mt-4 space-y-2 text-sm">
           <li><a href="mailto:${SITE.email}" class="hover:text-white">${SITE.email}</a></li>
           <li><a href="${SITE.phoneHref}" class="hover:text-white">${SITE.phone}</a></li>
+          <li><a href="${SITE.linkedin}" class="hover:text-white" target="_blank" rel="noopener">LinkedIn</a></li>
           <li>${SITE.location} · Deployable nationwide</li>
         </ul>
       </div>
