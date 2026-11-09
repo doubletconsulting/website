@@ -19,7 +19,7 @@
 
   btn.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
   document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false));
-  window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => e.matches && setOpen(false));
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => e.matches && setOpen(false));
 })();
 
 /* ---------- Reveal on scroll ---------- */

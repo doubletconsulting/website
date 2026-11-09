@@ -16,7 +16,7 @@ const SITE = {
   linkedin: 'https://www.linkedin.com/in/ty-trenary',
   // Fill these in once SAM.gov registration is confirmed (leave '' to hide the line)
   uei: 'S4W6CL8FFJA7',
-  cage: '',
+  cage: '26VX6',
   naics: '541611 · 541990 · 561210 · 611430',
 };
 
@@ -24,6 +24,7 @@ const NAV = [
   { href: 'index.html', label: 'Home', page: 'home' },
   { href: 'about.html', label: 'About', page: 'about' },
   { href: 'services.html', label: 'Services', page: 'services' },
+  { href: 'case-studies.html', label: 'Case Studies', page: 'cases' },
   { href: 'contact.html', label: 'Contact', page: 'contact' },
 ];
 
@@ -59,19 +60,19 @@ function renderHeader() {
         </span>
       </a>
 
-      <nav class="hidden items-center gap-8 md:flex" aria-label="Primary">
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Primary">
         ${links}
         <a href="contact.html" class="btn-primary !px-5 !py-2.5">Request a Consultation</a>
       </nav>
 
-      <button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md text-silver-100 hover:bg-white/10 md:hidden"
+      <button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md text-silver-100 hover:bg-white/10 lg:hidden"
         aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" data-menu-toggle>
         <svg class="h-6 w-6" data-icon-open fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
         <svg class="hidden h-6 w-6" data-icon-close fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
     </div>
 
-    <div id="mobile-menu" class="hidden border-t border-white/10 md:hidden">
+    <div id="mobile-menu" class="hidden border-t border-white/10 lg:hidden">
       <nav class="container-site space-y-1 py-4" aria-label="Mobile">
         ${mobileLinks}
         <a href="contact.html" class="btn-primary mt-3 w-full">Request a Consultation</a>

@@ -37,7 +37,7 @@
   .icon-tile { @apply flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500/10 text-orange-600; }
 
   /* Nav */
-  .nav-link { @apply relative py-2 text-sm font-medium text-silver-300 transition-colors hover:text-white; }
+  .nav-link { @apply relative whitespace-nowrap py-2 text-sm font-medium text-silver-300 transition-colors hover:text-white; }
   .nav-link[aria-current="page"] { @apply text-white; }
   .nav-link[aria-current="page"]::after { content: ""; @apply absolute -bottom-0.5 left-0 h-0.5 w-full rounded-full bg-orange-500; }
 
