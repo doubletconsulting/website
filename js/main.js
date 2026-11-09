@@ -61,6 +61,13 @@
   const form = document.getElementById('contact-form');
   if (!form) return;
 
+  // Preselect the service dropdown from a link like contact.html?interest=teaming
+  const wanted = new URLSearchParams(window.location.search).get('interest');
+  if (wanted && form.elements.interest) {
+    const opt = [...form.elements.interest.options].find((o) => o.text.toLowerCase().includes(wanted.toLowerCase()));
+    if (opt) form.elements.interest.value = opt.value || opt.text;
+  }
+
   const status = document.getElementById('form-status');
   const submitBtn = form.querySelector('button[type="submit"]');
 
