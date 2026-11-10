@@ -14,6 +14,7 @@ const SITE = {
   phoneHref: 'tel:+14259693424',
   location: 'Phoenix, Arizona',
   linkedin: 'https://www.linkedin.com/in/ty-trenary',
+  googleReview: 'https://g.page/r/CUxOGj4qEsZlEBM/review',
   // Fill these in once SAM.gov registration is confirmed (leave '' to hide the line)
   uei: 'S4W6CL8FFJA7',
   cage: '26VX6',
@@ -141,6 +142,7 @@ function renderFooter() {
           <li><a href="mailto:${SITE.email}" class="hover:text-white">${SITE.email}</a></li>
           <li><a href="${SITE.phoneHref}" class="hover:text-white">${SITE.phone}</a></li>
           <li><a href="${SITE.linkedin}" class="hover:text-white" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="${SITE.googleReview}" class="hover:text-white" target="_blank" rel="noopener">Find us on Google</a></li>
           <li>${SITE.location} · Deployable nationwide</li>
         </ul>
       </div>
