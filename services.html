@@ -17,10 +17,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/output.css?v=8">
+  <link rel="stylesheet" href="css/output.css?v=9">
   <script>document.documentElement.classList.add('js');</script>
-  <script src="js/components.js?v=8" defer></script>
-  <script src="js/main.js?v=8" defer></script>
+  <script src="js/components.js?v=9" defer></script>
+  <script src="js/main.js?v=9" defer></script>
   <script data-goatcounter="https://doubletconsulting.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body data-page="services">
@@ -29,7 +29,8 @@
   <main id="main">
     <!-- ============ PAGE HERO ============ -->
     <section class="relative overflow-hidden bg-navy-900">
-      <img src="assets/img/mark-640.webp" alt="" class="hero-watermark">
+      <img src="assets/img/photos/stock-eoc.webp" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30" fetchpriority="high">
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/85 to-navy-900/30" aria-hidden="true"></div>
       <div class="container-site relative py-16 lg:py-24">
         <p class="eyebrow">Services</p>
         <h1 class="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-tight text-white sm:text-5xl">Support across the full disaster cycle.</h1>
@@ -112,6 +113,20 @@
             <ul id="svc-7" class="mt-4 space-y-2 border-t border-silver-100 pt-4 text-sm text-navy-700" hidden><li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" aria-hidden="true"></span><span>Operational and organizational assessments</span></li><li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" aria-hidden="true"></span><span>Policy development and criminal-justice reform strategy</span></li><li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" aria-hidden="true"></span><span>Public-safety technology evaluation and adoption planning</span></li><li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" aria-hidden="true"></span><span>Multi-agency communications and interoperability strategy</span></li><li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" aria-hidden="true"></span><span>Executive coaching for new and aspiring public-safety leaders</span></li></ul>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ PHOTO BAND ============ -->
+    <section class="bg-slate-50 pb-20 lg:pb-24">
+      <div class="container-site grid gap-6 md:grid-cols-2">
+        <figure class="relative overflow-hidden rounded-2xl">
+          <img src="assets/img/photos/stock-damage-assessment.webp" alt="Consultant reviewing flood damage with a tablet" width="1200" height="674" loading="lazy" class="aspect-[16/9] w-full object-cover">
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950/90 to-transparent p-5 pt-12 font-heading text-lg font-bold text-white">Disaster recovery &amp; damage assessment</figcaption>
+        </figure>
+        <figure class="relative overflow-hidden rounded-2xl">
+          <img src="assets/img/photos/stock-tabletop.webp" alt="Officials working through a tabletop exercise around a map" width="1200" height="674" loading="lazy" class="aspect-[16/9] w-full object-cover">
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950/90 to-transparent p-5 pt-12 font-heading text-lg font-bold text-white">HSEEP exercises &amp; training</figcaption>
+        </figure>
       </div>
     </section>
 
